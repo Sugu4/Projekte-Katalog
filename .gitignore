@@ -1,0 +1,11 @@
+# Kundendaten - nicht hochladen
+data/projects.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# System
+.DS_Store
+Thumbs.db
