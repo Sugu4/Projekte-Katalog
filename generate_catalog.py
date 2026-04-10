@@ -6,6 +6,7 @@ Katalog exportieren: python generate_catalog.py
 
 import json
 import os
+import shutil
 import webbrowser
 from pathlib import Path
 from datetime import date
@@ -34,8 +35,7 @@ def finde_logo():
     for name in prioritaet:
         pfad = ASSETS_DIR / name
         if pfad.exists():
-            # Relativer Pfad fuer HTML
-            return f"../assets/{name}"
+            return f"assets/{name}"
     return None
 
 
@@ -43,7 +43,17 @@ def bild_pfad_html(relativer_pfad):
     """Konvertiert gespeicherten Pfad zu HTML-relativem Pfad."""
     if not relativer_pfad:
         return None
-    return f"../{relativer_pfad}"
+    return relativer_pfad
+
+
+def kopiere_assets_nach_docs():
+    """Kopiert den Assets-Ordner in docs/ damit GitHub Pages die Bilder findet."""
+    ziel = DOCS_DIR / "assets"
+    if ASSETS_DIR.exists():
+        if ziel.exists():
+            shutil.rmtree(ziel)
+        shutil.copytree(ASSETS_DIR, ziel)
+        print("[OK] Assets nach docs/assets/ kopiert")
 
 
 def erstelle_projekt_karte(projekt):
@@ -376,6 +386,9 @@ def generiere_katalog():
     with open(ausgabe_docs, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"[OK] GitHub Pages: {ausgabe_docs}")
+
+    # Assets in docs/ kopieren fuer GitHub Pages
+    kopiere_assets_nach_docs()
 
     print("\nIm Browser oeffnen? (j/n): ", end="")
     antwort = input().strip().lower()
