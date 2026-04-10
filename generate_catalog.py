@@ -35,7 +35,7 @@ def finde_logo():
     for name in prioritaet:
         pfad = ASSETS_DIR / name
         if pfad.exists():
-            return f"assets/{name}"
+            return f"../assets/{name}"
     return None
 
 
@@ -43,7 +43,7 @@ def bild_pfad_html(relativer_pfad):
     """Konvertiert gespeicherten Pfad zu HTML-relativem Pfad."""
     if not relativer_pfad:
         return None
-    return relativer_pfad
+    return f"../{relativer_pfad}"
 
 
 def kopiere_assets_nach_docs():
@@ -381,10 +381,12 @@ def generiere_katalog():
     print(f"\n[OK] Lokal:       {ausgabe_lokal}")
 
     # GitHub Pages Version (docs/index.html)
+    # Pfade von ../assets/ auf assets/ anpassen
+    html_docs = html.replace("../assets/", "assets/")
     DOCS_DIR.mkdir(exist_ok=True)
     ausgabe_docs = DOCS_DIR / "index.html"
     with open(ausgabe_docs, "w", encoding="utf-8") as f:
-        f.write(html)
+        f.write(html_docs)
     print(f"[OK] GitHub Pages: {ausgabe_docs}")
 
     # Assets in docs/ kopieren fuer GitHub Pages
