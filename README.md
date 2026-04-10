@@ -47,7 +47,7 @@ Du wirst durch folgende Eingaben geführt:
 |---|---|
 | Projektname | SanTech Devey UG |
 | Kategorie | Webseiten |
-| Kundenname | ... |
+| Kundenname | SanTech Devey UG |
 | Beschreibung | Webseite von Grund auf erstellt |
 | Ergebnis | Innerhalb 2 Wochen live geschaltet |
 | Zeitraum | Dezember 2025 |
