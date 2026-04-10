@@ -4,7 +4,7 @@ Digitaler Katalog zum Präsentieren deiner Projekte. Zeigt Webseiten, Branding, 
 
 ---
 
-[![Katalog](https://img.shields.io/badge/Katalog-ansehen-blue?style=for-the-badge)](https://sugu4.github.io/Projekte-Katalog/)
+[![Katalog](https://img.shields.io/badge/Katalog-ansehen-green?style=for-the-badge)](https://sugu4.github.io/Projekte-Katalog/)
 
 
 ## Voraussetzungen
