@@ -6,7 +6,7 @@ Digitaler Katalog zum Präsentieren deiner Projekte. Zeigt Webseiten, Branding, 
 
 ## Voraussetzungen
 
-- Python 3.x installiert
+- Python 3.. installiert
 - Google Chrome installiert (für PDF-Export)
 
 ---
