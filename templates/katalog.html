@@ -339,6 +339,81 @@
       display: block;
     }
 
+    /* ===== BILD-SLIDER ===== */
+    .bild-slider {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .bild-slider .projekt-bild {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      opacity: 0;
+      transition: opacity 0.45s ease;
+    }
+
+    .bild-slider .projekt-bild.aktiv {
+      opacity: 1;
+    }
+
+    .slider-pfeil {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.55);
+      color: #fff;
+      border: none;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      border-radius: 2px;
+      opacity: 0;
+      transition: opacity 0.2s;
+      padding: 0;
+      line-height: 1;
+    }
+
+    .bild-slider:hover .slider-pfeil {
+      opacity: 1;
+    }
+
+    .slider-pfeil-links  { left: 8px; }
+    .slider-pfeil-rechts { right: 8px; }
+
+    .slider-punkte {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 3;
+    }
+
+    .slider-punkt {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.35);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .slider-punkt.aktiv {
+      background: var(--farbe-akzent);
+    }
+
     .projekt-name {
       font-size: 15px;
       color: var(--farbe-weiss);
@@ -1015,6 +1090,53 @@
 
     // Seite geladen: sofort im Hintergrund vorladen
     window.addEventListener('load', vorladen);
+
+    // ===== BILD-SLIDER =====
+    function initSlider(slider) {
+      const bilder = slider.querySelectorAll('.projekt-bild');
+      if (bilder.length <= 1) return;
+
+      let aktuell = 0;
+      let autoInterval;
+
+      function zeige(index) {
+        bilder.forEach(b => b.classList.remove('aktiv'));
+        slider.querySelectorAll('.slider-punkt').forEach(p => p.classList.remove('aktiv'));
+        bilder[index].classList.add('aktiv');
+        const punkte = slider.querySelectorAll('.slider-punkt');
+        if (punkte[index]) punkte[index].classList.add('aktiv');
+        aktuell = index;
+      }
+
+      function naechste() { zeige((aktuell + 1) % bilder.length); }
+      function vorherige() { zeige((aktuell - 1 + bilder.length) % bilder.length); }
+
+      const INTERVALL_MS = 3500; // Wechselgeschwindigkeit in Millisekunden anpassen
+      let pausiert = false;
+
+      function starteAuto() {
+        clearInterval(autoInterval);
+        autoInterval = setInterval(() => { if (!pausiert) naechste(); }, INTERVALL_MS);
+      }
+
+      slider.querySelector('.slider-pfeil-links').addEventListener('click', () => {
+        vorherige(); starteAuto();
+      });
+      slider.querySelector('.slider-pfeil-rechts').addEventListener('click', () => {
+        naechste(); starteAuto();
+      });
+      slider.querySelectorAll('.slider-punkt').forEach((p, i) => {
+        p.addEventListener('click', () => { zeige(i); starteAuto(); });
+      });
+
+      slider.addEventListener('mouseenter', () => { pausiert = true; });
+      slider.addEventListener('mouseleave', () => { pausiert = false; });
+
+      zeige(0);
+      starteAuto();
+    }
+
+    document.querySelectorAll('.bild-slider').forEach(initSlider);
   </script>
 
 </body>

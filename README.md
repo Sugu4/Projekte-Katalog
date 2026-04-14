@@ -168,36 +168,16 @@ python generate_catalog.py
 
 ---
 
-## GitHub Pages einrichten (einmalig)
+## Änderungen
 
-**Schritt 1:** Repo auf GitHub erstellen (z.B. `webm24-katalog`)
+| Was | Date |
+|---|---|
+| Design, Farben, Layout | templates/katalog.html |
+| Slider-Geschwindigkeit | templates/katalog.html |
+| Projektdaten, Bilder | data/projects.json |
+| Neue Projekte hinzufügen | python add_project.py |
+| Ausgabe neu bauen | python generate_catalog.py |
 
-**Schritt 2:** Projekt hochladen:
-```bash
-git init
-git add .
-git commit -m "Katalog initial"
-git remote add origin https://github.com/DEIN-USERNAME/webm24-katalog.git
-git push -u origin main
-```
-
-**Schritt 3:** In GitHub Einstellungen:
-`Settings` → `Pages` → Source: `Deploy from a branch` → Branch: `main` → Folder: `/docs`
-
-**Katalog ist dann live unter:**
-```
-https://DEIN-USERNAME.github.io/webm24-katalog/
-```
-
-**Aktualisieren nach neuen Projekten:**
-```bash
-python generate_catalog.py
-git add docs/
-git commit -m "Neues Projekt hinzugefügt"
-git push
-```
-
----
 
 ## Kontaktdaten aktualisieren
 

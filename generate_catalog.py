@@ -60,8 +60,24 @@ def erstelle_projekt_karte(projekt):
     """Generiert HTML fuer eine einzelne Projekt-Karte."""
     bilder_html = ""
     if projekt.get("bilder"):
-        src = bild_pfad_html(projekt["bilder"][0])
-        bilder_html = f'<img src="{src}" alt="{projekt["name"]}" class="projekt-bild" onerror="this.style.display=\'none\'" />'
+        bilder = projekt["bilder"]
+        name = projekt["name"]
+        if len(bilder) == 1:
+            src = bild_pfad_html(bilder[0])
+            bilder_html = f'<img src="{src}" alt="{name}" class="projekt-bild" onerror="this.style.display=\'none\'" />'
+        else:
+            imgs = ""
+            punkte = ""
+            for b in bilder:
+                src = bild_pfad_html(b)
+                imgs += f'\n              <img src="{src}" alt="{name}" class="projekt-bild" onerror="this.style.display=\'none\'" />'
+                punkte += '<div class="slider-punkt"></div>'
+            bilder_html = f"""<div class="bild-slider">
+              {imgs}
+              <button class="slider-pfeil slider-pfeil-links" aria-label="Vorheriges Bild">&#8249;</button>
+              <button class="slider-pfeil slider-pfeil-rechts" aria-label="Naechstes Bild">&#8250;</button>
+              <div class="slider-punkte">{punkte}</div>
+            </div>"""
 
     ergebnis_html = ""
     if projekt.get("ergebnis"):
