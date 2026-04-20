@@ -1,4 +1,4 @@
-# Projekt-Katalog — Anweisungen für Claude
+# Projekt-Katalog - Anweisungen für Claude
 
 ## Schreibstil
 - Keine Gedankenstriche (—) im generierten Text verwenden
