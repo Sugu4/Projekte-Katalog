@@ -3,8 +3,8 @@
 WebM24 PDF Generator
 PDF exportieren: python generate_pdf.py
 
-Nutzt Chrome/Edge im Hintergrund fuer korrektes Querformat-PDF.
-Kein extra Programm noetig, Chrome oder Edge muss installiert sein.
+Nutzt Chrome/Edge im Hintergrund für korrektes Querformat-PDF.
+Kein extra Programm nötig, Chrome oder Edge muss installiert sein.
 """
 
 import subprocess
@@ -54,8 +54,8 @@ def generiere_pdf():
     browser_pfad, browser_name = finde_browser()
     if not browser_pfad:
         print("\nChrome oder Edge nicht gefunden.")
-        print("Bitte manuell: Katalog im Browser oeffnen, Strg+P, Ziel: 'Als PDF speichern'")
-        print("Wichtig: NICHT 'Microsoft Print to PDF' waehlen!")
+        print("Bitte manuell: Katalog im Browser öffnen, Strg+P, Ziel: 'Als PDF speichern'")
+        print("Wichtig: NICHT 'Microsoft Print to PDF' wählen!")
         return
 
     html_datei = finde_html()
@@ -84,11 +84,11 @@ def generiere_pdf():
         ], check=True, capture_output=True, timeout=30)
 
         if pdf_datei.exists():
-            groesse = pdf_datei.stat().st_size / 1024
+            größe = pdf_datei.stat().st_size / 1024
             print(f"\n[OK] PDF erstellt: {pdf_datei}")
-            print(f"     Groesse: {groesse:.0f} KB")
+            print(f"     Größe: {größe:.0f} KB")
 
-            print("\nPDF oeffnen? (j/n): ", end="")
+            print("\nPDF öffnen? (j/n): ", end="")
             if input().strip().lower() == "j":
                 os.startfile(str(pdf_datei))
         else:
@@ -98,7 +98,7 @@ def generiere_pdf():
         print("\nTimeout: Browser hat zu lange gebraucht.")
     except subprocess.CalledProcessError as e:
         print(f"\nFehler beim PDF erstellen: {e}")
-        print("Tipp: Katalog manuell im Browser oeffnen und Strg+P druecken.")
+        print("Tipp: Katalog manuell im Browser öffnen und Strg+P drücken.")
     except Exception as e:
         print(f"\nUnerwarteter Fehler: {e}")
 

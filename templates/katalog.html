@@ -511,6 +511,15 @@
       font-weight: normal;
     }
 
+    .kontakt-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .kontakt-link:hover {
+      color: var(--farbe-akzent-hell);
+    }
+
     /* ===== NAVIGATION UNTEN ===== */
     .seiten-navigation {
       width: var(--seite-breite);
@@ -646,6 +655,13 @@
     .leistungs-icon {
       font-size: 22px;
       margin-bottom: 10px;
+      display: block;
+      color: var(--farbe-gruen);
+    }
+
+    .leistungs-icon svg {
+      width: 24px;
+      height: 24px;
       display: block;
     }
 
@@ -963,7 +979,7 @@
 
   <!-- UNTERE NAVIGATION -->
   <div class="seiten-navigation">
-    <button class="nav-pfeil" id="btn-zurueck" onclick="navigiere(-1)">&#8592; Zurueck</button>
+    <button class="nav-pfeil" id="btn-zurueck" onclick="navigiere(-1)">&#8592; Zurück</button>
     <div class="seiten-indikator">Seite <span id="aktuelle-seite">1</span> von <span id="gesamt-seiten">1</span></div>
     <button class="nav-pfeil" id="btn-weiter" onclick="navigiere(1)">Weiter &#8594;</button>
   </div>
@@ -1108,7 +1124,7 @@
         aktuell = index;
       }
 
-      function naechste() { zeige((aktuell + 1) % bilder.length); }
+      function nächste() { zeige((aktuell + 1) % bilder.length); }
       function vorherige() { zeige((aktuell - 1 + bilder.length) % bilder.length); }
 
       const INTERVALL_MS = 3500; // Wechselgeschwindigkeit in Millisekunden anpassen
@@ -1116,14 +1132,14 @@
 
       function starteAuto() {
         clearInterval(autoInterval);
-        autoInterval = setInterval(() => { if (!pausiert) naechste(); }, INTERVALL_MS);
+        autoInterval = setInterval(() => { if (!pausiert) nächste(); }, INTERVALL_MS);
       }
 
       slider.querySelector('.slider-pfeil-links').addEventListener('click', () => {
         vorherige(); starteAuto();
       });
       slider.querySelector('.slider-pfeil-rechts').addEventListener('click', () => {
-        naechste(); starteAuto();
+        nächste(); starteAuto();
       });
       slider.querySelectorAll('.slider-punkt').forEach((p, i) => {
         p.addEventListener('click', () => { zeige(i); starteAuto(); });

@@ -511,6 +511,15 @@
       font-weight: normal;
     }
 
+    .kontakt-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .kontakt-link:hover {
+      color: var(--farbe-akzent-hell);
+    }
+
     /* ===== NAVIGATION UNTEN ===== */
     .seiten-navigation {
       width: var(--seite-breite);
@@ -646,6 +655,13 @@
     .leistungs-icon {
       font-size: 22px;
       margin-bottom: 10px;
+      display: block;
+      color: var(--farbe-gruen);
+    }
+
+    .leistungs-icon svg {
+      width: 24px;
+      height: 24px;
       display: block;
     }
 
@@ -905,6 +921,7 @@
       <div class="cover-kategorien">
         <div class="cover-kategorie-tag">Webseiten</div>
 <div class="cover-kategorie-tag">Branding</div>
+<div class="cover-kategorie-tag">SaaS</div>
 
       </div>
     </div>
@@ -914,7 +931,7 @@
       <div class="seiten-kopf">
         <div>
           <div class="seiten-titel">Inhaltsverzeichnis</div>
-          <div class="seiten-nummer">4 Projekte in 2 Bereichen</div>
+          <div class="seiten-nummer">5 Projekte in 3 Bereichen</div>
         </div>
         <img src="../assets/Logo WebM24 x weiß.png" alt="Logo" style="max-height:40px; opacity:0.5;" />
       </div>
@@ -929,6 +946,11 @@
           <span class="iv-name">Branding</span>
           <span class="iv-punkt"></span>
           <span class="iv-seite">2 Projekt(e)</span>
+        </li>
+        <li class="iv-eintrag" onclick="geheZuSeite(4)">
+          <span class="iv-name">SaaS</span>
+          <span class="iv-punkt"></span>
+          <span class="iv-seite">1 Projekt(e)</span>
         </li>
       </ul>
     </div>
@@ -983,7 +1005,7 @@
               <img src="../assets/projekte/001_SanTechDevey/visitenkarte-front.png" alt="SanTech Devey" class="projekt-bild" onerror="this.style.display='none'" />
               <img src="../assets/projekte/001_SanTechDevey/visitenkarte-back.png" alt="SanTech Devey" class="projekt-bild" onerror="this.style.display='none'" />
               <button class="slider-pfeil slider-pfeil-links" aria-label="Vorheriges Bild">&#8249;</button>
-              <button class="slider-pfeil slider-pfeil-rechts" aria-label="Naechstes Bild">&#8250;</button>
+              <button class="slider-pfeil slider-pfeil-rechts" aria-label="Nächstes Bild">&#8250;</button>
               <div class="slider-punkte"><div class="slider-punkt"></div><div class="slider-punkt"></div><div class="slider-punkt"></div><div class="slider-punkt"></div><div class="slider-punkt"></div><div class="slider-punkt"></div></div>
             </div>
           <div class="projekt-name">SanTech Devey</div>
@@ -1001,7 +1023,7 @@
               <img src="../assets/projekte/002_ByGlanz/og-byglanz.jpg" alt="By Glanz" class="projekt-bild" onerror="this.style.display='none'" />
               <img src="../assets/projekte/002_ByGlanz/glanzwerk_flyer.png" alt="By Glanz" class="projekt-bild" onerror="this.style.display='none'" />
               <button class="slider-pfeil slider-pfeil-links" aria-label="Vorheriges Bild">&#8249;</button>
-              <button class="slider-pfeil slider-pfeil-rechts" aria-label="Naechstes Bild">&#8250;</button>
+              <button class="slider-pfeil slider-pfeil-rechts" aria-label="Nächstes Bild">&#8250;</button>
               <div class="slider-punkte"><div class="slider-punkt"></div><div class="slider-punkt"></div><div class="slider-punkt"></div><div class="slider-punkt"></div><div class="slider-punkt"></div></div>
             </div>
           <div class="projekt-name">By Glanz</div>
@@ -1012,84 +1034,111 @@
         </div>
       </div>
     </div>
+    <div class="seite kategorie-seite" id="seite-4">
+      <div class="kategorie-header">
+        <div class="kategorie-nummer">04</div>
+        <div class="kategorie-info">
+          <div class="kategorie-titel">SaaS</div>
+          <div class="kategorie-anzahl">1 Projekt</div>
+        </div>
+      </div>
+      <div class="projekte-raster">
+        
+        <div class="projekt-karte">
+          <div class="bild-slider">
+              
+              <img src="../assets/projekte/005_TrendScope/trend-scope-dashboard.png" alt="Trend Scope" class="projekt-bild" onerror="this.style.display='none'" />
+              <img src="../assets/projekte/005_TrendScope/trend-scope-architecture.png" alt="Trend Scope" class="projekt-bild" onerror="this.style.display='none'" />
+              <button class="slider-pfeil slider-pfeil-links" aria-label="Vorheriges Bild">&#8249;</button>
+              <button class="slider-pfeil slider-pfeil-rechts" aria-label="Nächstes Bild">&#8250;</button>
+              <div class="slider-punkte"><div class="slider-punkt"></div><div class="slider-punkt"></div></div>
+            </div>
+          <div class="projekt-name">Trend Scope</div>
+          <div class="projekt-kunde">TrendScope</div>
+          <div class="projekt-beschreibung">TrendScope ist ein System zur Analyse und Vorhersage globaler Social-Media-Trends. Es sammelt automatisch Daten aus Reddit, YouTube, GitHub und NewsAPI, verarbeitet diese mit NLP-Methoden und berechnet Trend-Scores sowie ML-Prognosen, dargestellt in einem interaktiven Echtzeit-Dashboard.</div>
+          <div class="projekt-ergebnis">Unternehmen und Privatpersonen erkennen frühzeitig aufkommende Trends und können gezielt handeln, etwa durch trendbasierte Börsenentscheidungen, das Erstellen von reichweitenstarkem Content oder das Identifizieren neuer Marktchancen bevor sie den Mainstream erreichen.</div>
+          <div class="projekt-zeitraum">April 2026</div>
+        </div>
+      </div>
+    </div>
 
     <!-- LEISTUNGSUEBERSICHT -->
     
-    <div class="seite leistungs-seite" id="seite-4">
+    <div class="seite leistungs-seite" id="seite-5">
       <div class="seiten-kopf">
         <div>
-          <div class="seiten-titel">Was ich für Sie mache</div>
+          <div class="seiten-titel">Was ich für dich mache</div>
           <div class="seiten-nummer">10 Leistungsbereiche aus einer Hand</div>
         </div>
       </div>
       <div class="leistungs-raster">
         
         <div class="leistungs-karte">
-          <span class="leistungs-icon">🌐</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/><line x1="2" y1="12" x2="22" y2="12"/></svg></span>
           <div class="leistungs-name">Webseiten</div>
           <div class="leistungs-beschreibung">Individuelle Webseiten von Grund auf, maßgeschneidert für Ihr Unternehmen</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">🔄</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></span>
           <div class="leistungs-name">Webseite Update</div>
           <div class="leistungs-beschreibung">Pflege, Aktualisierung und Optimierung bestehender Webseiten</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">✦</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg></span>
           <div class="leistungs-name">Branding</div>
-          <div class="leistungs-beschreibung">Logo, Corporate Design und visuelle Identitaet aus einer Hand</div>
+          <div class="leistungs-beschreibung">Logo, Corporate Design und visuelle Identität aus einer Hand</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">⚙</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span>
           <div class="leistungs-name">SaaS</div>
-          <div class="leistungs-beschreibung">Digitale Software-Loesungen für Ihr Unternehmen</div>
+          <div class="leistungs-beschreibung">Digitale Software-Lösungen für Ihr Unternehmen</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">🖼</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></span>
           <div class="leistungs-name">Bilder bearbeiten</div>
           <div class="leistungs-beschreibung">Professionelle Bildbearbeitung und Retusche für starke Wirkung</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">▶</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg></span>
           <div class="leistungs-name">Videos bearbeiten</div>
-          <div class="leistungs-beschreibung">Videoproduktion, Schnitt und Nachbearbeitung für alle Kanaele</div>
+          <div class="leistungs-beschreibung">Videoproduktion, Schnitt und Nachbearbeitung für alle Kanäle</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">📢</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
           <div class="leistungs-name">Werbung</div>
           <div class="leistungs-beschreibung">Online-Werbung und Social Media Kampagnen für Unternehmen</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">G</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
           <div class="leistungs-name">Google Konto</div>
           <div class="leistungs-beschreibung">Google My Business Pflege, Google Ads Setup und Optimierung</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">↑</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
           <div class="leistungs-name">SEO</div>
           <div class="leistungs-beschreibung">Suchmaschinenoptimierung für mehr Sichtbarkeit und Reichweite</div>
         </div>
         <div class="leistungs-karte">
-          <span class="leistungs-icon">📊</span>
+          <span class="leistungs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
           <div class="leistungs-name">Monatsberichte</div>
-          <div class="leistungs-beschreibung">Regelmaessige Analysen und transparente Berichte für Ihre Kunden</div>
+          <div class="leistungs-beschreibung">Regelmäßige Analysen und transparente Berichte für Ihre Kunden</div>
         </div>
       </div>
       <div class="leistungs-cta">
         <div class="leistungs-cta-text">Interesse geweckt? Sprechen Sie mich direkt an.</div>
-        <div class="leistungs-cta-kontakt">sueleyman.guemues46@gmail.com  |  +49 176 41966733</div>
+        <div class="leistungs-cta-kontakt"><a href="mailto:webmiete24@gmail.com" class="kontakt-link">webmiete24@gmail.com</a>  |  <a href="tel:+4917641966733" class="kontakt-link">+49 176 41966733</a></div>
       </div>
     </div>
 
     <!-- LETZTE SEITE: RUECKSEITE -->
-    <div class="seite rueckseite" id="seite-5">
+    <div class="seite rueckseite" id="seite-6">
       <img src="../assets/Logo WebM24 x weiß.png" alt="Logo" class="rueckseite-logo" />
       <div class="rueckseite-slogan">Ihr Erfolg ist unser Antrieb.</div>
       <div style="width:40px;height:1px;background:var(--farbe-akzent);margin:0 auto 32px;position:relative;z-index:1;"></div>
       <div class="kontakt-zeilen">
-        <div class="kontakt-zeile"><strong>E-Mail:</strong> sueleyman.guemues46@gmail.com</div>
+        <div class="kontakt-zeile"><strong>E-Mail:</strong> <a href="mailto:webmiete24@gmail.com" class="kontakt-link">webmiete24@gmail.com</a></div>
         
-        <div class="kontakt-zeile"><strong>Tel:</strong> +49 176 41966733</div>
+        <div class="kontakt-zeile"><strong>Tel:</strong> <a href="tel:+4917641966733" class="kontakt-link">+49 176 41966733</a></div>
       </div>
     </div>
 
@@ -1097,7 +1146,7 @@
 
   <!-- UNTERE NAVIGATION -->
   <div class="seiten-navigation">
-    <button class="nav-pfeil" id="btn-zurueck" onclick="navigiere(-1)">&#8592; Zurueck</button>
+    <button class="nav-pfeil" id="btn-zurueck" onclick="navigiere(-1)">&#8592; Zurück</button>
     <div class="seiten-indikator">Seite <span id="aktuelle-seite">1</span> von <span id="gesamt-seiten">1</span></div>
     <button class="nav-pfeil" id="btn-weiter" onclick="navigiere(1)">Weiter &#8594;</button>
   </div>
@@ -1119,6 +1168,11 @@
     btn_3.textContent = 'Branding';
     btn_3.onclick = () => geheZuSeite(3);
     kategorieNav.appendChild(btn_3);
+    const btn_4 = document.createElement('button');
+    btn_4.className = 'kat-nav-btn';
+    btn_4.textContent = 'SaaS';
+    btn_4.onclick = () => geheZuSeite(4);
+    kategorieNav.appendChild(btn_4);
 
     function aktualisiereAnzeige() {
       seiten.forEach((s, i) => {
@@ -1252,7 +1306,7 @@
         aktuell = index;
       }
 
-      function naechste() { zeige((aktuell + 1) % bilder.length); }
+      function nächste() { zeige((aktuell + 1) % bilder.length); }
       function vorherige() { zeige((aktuell - 1 + bilder.length) % bilder.length); }
 
       const INTERVALL_MS = 3500; // Wechselgeschwindigkeit in Millisekunden anpassen
@@ -1260,14 +1314,14 @@
 
       function starteAuto() {
         clearInterval(autoInterval);
-        autoInterval = setInterval(() => { if (!pausiert) naechste(); }, INTERVALL_MS);
+        autoInterval = setInterval(() => { if (!pausiert) nächste(); }, INTERVALL_MS);
       }
 
       slider.querySelector('.slider-pfeil-links').addEventListener('click', () => {
         vorherige(); starteAuto();
       });
       slider.querySelector('.slider-pfeil-rechts').addEventListener('click', () => {
-        naechste(); starteAuto();
+        nächste(); starteAuto();
       });
       slider.querySelectorAll('.slider-punkt').forEach((p, i) => {
         p.addEventListener('click', () => { zeige(i); starteAuto(); });

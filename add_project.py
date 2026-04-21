@@ -34,7 +34,7 @@ def zeige_kategorien(kategorien):
 def waehle_kategorie(kategorien):
     zeige_kategorien(kategorien)
     while True:
-        auswahl = input("\nKategorie-Nummer waehlen: ").strip()
+        auswahl = input("\nKategorie-Nummer wählen: ").strip()
         if auswahl.isdigit() and 1 <= int(auswahl) <= len(kategorien):
             return kategorien[int(auswahl) - 1]
         print("Ungueltige Auswahl, bitte erneut versuchen.")

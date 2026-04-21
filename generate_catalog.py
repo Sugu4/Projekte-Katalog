@@ -25,7 +25,7 @@ def lade_daten():
 
 
 def finde_logo():
-    """Sucht das beste Logo in den Assets. Weisse Version bevorzugt fuer dunklen Hintergrund."""
+    """Sucht das beste Logo in den Assets. Weiße Version bevorzugt für dunklen Hintergrund."""
     prioritaet = [
         "Logo WebM24 x weiß.png",
         "Logo WebM24.png",
@@ -57,7 +57,7 @@ def kopiere_assets_nach_docs():
 
 
 def erstelle_projekt_karte(projekt):
-    """Generiert HTML fuer eine einzelne Projekt-Karte."""
+    """Generiert HTML für eine einzelne Projekt-Karte."""
     bilder_html = ""
     if projekt.get("bilder"):
         bilder = projekt["bilder"]
@@ -75,7 +75,7 @@ def erstelle_projekt_karte(projekt):
             bilder_html = f"""<div class="bild-slider">
               {imgs}
               <button class="slider-pfeil slider-pfeil-links" aria-label="Vorheriges Bild">&#8249;</button>
-              <button class="slider-pfeil slider-pfeil-rechts" aria-label="Naechstes Bild">&#8250;</button>
+              <button class="slider-pfeil slider-pfeil-rechts" aria-label="Nächstes Bild">&#8250;</button>
               <div class="slider-punkte">{punkte}</div>
             </div>"""
 
@@ -96,60 +96,60 @@ def erstelle_projekt_karte(projekt):
 
 LEISTUNGEN = [
     {
-        "icon": "🌐",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/><line x1="2" y1="12" x2="22" y2="12"/></svg>',
         "name": "Webseiten",
         "beschreibung": "Individuelle Webseiten von Grund auf, maßgeschneidert für Ihr Unternehmen"
     },
     {
-        "icon": "🔄",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>',
         "name": "Webseite Update",
         "beschreibung": "Pflege, Aktualisierung und Optimierung bestehender Webseiten"
     },
     {
-        "icon": "✦",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>',
         "name": "Branding",
-        "beschreibung": "Logo, Corporate Design und visuelle Identitaet aus einer Hand"
+        "beschreibung": "Logo, Corporate Design und visuelle Identität aus einer Hand"
     },
     {
-        "icon": "⚙",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>',
         "name": "SaaS",
-        "beschreibung": "Digitale Software-Loesungen für Ihr Unternehmen"
+        "beschreibung": "Digitale Software-Lösungen für Ihr Unternehmen"
     },
     {
-        "icon": "🖼",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>',
         "name": "Bilder bearbeiten",
         "beschreibung": "Professionelle Bildbearbeitung und Retusche für starke Wirkung"
     },
     {
-        "icon": "▶",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>',
         "name": "Videos bearbeiten",
-        "beschreibung": "Videoproduktion, Schnitt und Nachbearbeitung für alle Kanaele"
+        "beschreibung": "Videoproduktion, Schnitt und Nachbearbeitung für alle Kanäle"
     },
     {
-        "icon": "📢",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
         "name": "Werbung",
         "beschreibung": "Online-Werbung und Social Media Kampagnen für Unternehmen"
     },
     {
-        "icon": "G",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>',
         "name": "Google Konto",
         "beschreibung": "Google My Business Pflege, Google Ads Setup und Optimierung"
     },
     {
-        "icon": "↑",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>',
         "name": "SEO",
         "beschreibung": "Suchmaschinenoptimierung für mehr Sichtbarkeit und Reichweite"
     },
     {
-        "icon": "📊",
+        "icon": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>',
         "name": "Monatsberichte",
-        "beschreibung": "Regelmaessige Analysen und transparente Berichte für Ihre Kunden"
+        "beschreibung": "Regelmäßige Analysen und transparente Berichte für Ihre Kunden"
     },
 ]
 
 
 def erstelle_leistungs_seite(seiten_index, kontakt_email, kontakt_telefon):
-    """Generiert die Leistungsuebersicht-Seite."""
+    """Generiert die Leistungsübersicht-Seite."""
     karten_html = ""
     for leistung in LEISTUNGEN:
         karten_html += f"""
@@ -159,18 +159,19 @@ def erstelle_leistungs_seite(seiten_index, kontakt_email, kontakt_telefon):
           <div class="leistungs-beschreibung">{leistung['beschreibung']}</div>
         </div>"""
 
-    kontakt_info = ""
+    kontakt_teile = []
     if kontakt_email:
-        kontakt_info = kontakt_email
+        kontakt_teile.append(f'<a href="mailto:{kontakt_email}" class="kontakt-link">{kontakt_email}</a>')
     if kontakt_telefon:
-        trennzeichen = "  |  " if kontakt_info else ""
-        kontakt_info += f"{trennzeichen}{kontakt_telefon}"
+        telefon_href = kontakt_telefon.replace(' ', '').replace('-', '')
+        kontakt_teile.append(f'<a href="tel:{telefon_href}" class="kontakt-link">{kontakt_telefon}</a>')
+    kontakt_info = "  |  ".join(kontakt_teile)
 
     return f"""
     <div class="seite leistungs-seite" id="seite-{seiten_index}">
       <div class="seiten-kopf">
         <div>
-          <div class="seiten-titel">Was ich für Sie mache</div>
+          <div class="seiten-titel">Was ich für dich mache</div>
           <div class="seiten-nummer">10 Leistungsbereiche aus einer Hand</div>
         </div>
       </div>
@@ -185,7 +186,7 @@ def erstelle_leistungs_seite(seiten_index, kontakt_email, kontakt_telefon):
 
 
 def erstelle_kategorie_seite(kategorie, projekte, seiten_index):
-    """Generiert HTML fuer eine Kategorie-Seite."""
+    """Generiert HTML für eine Kategorie-Seite."""
     karten_html = ""
     for p in projekte:
         karten_html += erstelle_projekt_karte(p)
@@ -241,7 +242,7 @@ def generiere_html(daten):
         kategorie_nav_eintraege.append({"name": kat, "seite": seiten_index})
         seiten_index += 1
 
-    # Leistungsuebersicht
+    # Leistungsübersicht
     kontakt = info.get("kontakt", {})
     leistungs_seite_html = erstelle_leistungs_seite(
         seiten_index,
@@ -325,7 +326,7 @@ def generiere_html(daten):
     # Kategorie-Seiten
     html = html.replace('{{ kategorie_seiten }}', kategorie_seiten_html_final)
 
-    # Leistungsuebersicht
+    # Leistungsübersicht
     html = html.replace('{{ leistungs_seite }}', leistungs_seite_html)
 
     # Kategorie Nav JS
@@ -339,23 +340,25 @@ def generiere_html(daten):
     if kontakt_email:
         html = html.replace(
             '{% if kontakt_email %}\n        <div class="kontakt-zeile"><strong>E-Mail:</strong> {{ kontakt_email }}</div>\n        {% endif %}',
-            f'<div class="kontakt-zeile"><strong>E-Mail:</strong> {kontakt_email}</div>'
+            f'<div class="kontakt-zeile"><strong>E-Mail:</strong> <a href="mailto:{kontakt_email}" class="kontakt-link">{kontakt_email}</a></div>'
         )
     else:
         html = html.replace('{% if kontakt_email %}\n        <div class="kontakt-zeile"><strong>E-Mail:</strong> {{ kontakt_email }}</div>\n        {% endif %}', '')
 
     if kontakt_website:
+        website_url = kontakt_website if kontakt_website.startswith('http') else f'https://{kontakt_website}'
         html = html.replace(
             '{% if kontakt_website %}\n        <div class="kontakt-zeile"><strong>Web:</strong> {{ kontakt_website }}</div>\n        {% endif %}',
-            f'<div class="kontakt-zeile"><strong>Web:</strong> {kontakt_website}</div>'
+            f'<div class="kontakt-zeile"><strong>Web:</strong> <a href="{website_url}" class="kontakt-link" target="_blank">{kontakt_website}</a></div>'
         )
     else:
         html = html.replace('{% if kontakt_website %}\n        <div class="kontakt-zeile"><strong>Web:</strong> {{ kontakt_website }}</div>\n        {% endif %}', '')
 
     if kontakt_telefon:
+        telefon_href = kontakt_telefon.replace(' ', '').replace('-', '')
         html = html.replace(
             '{% if kontakt_telefon %}\n        <div class="kontakt-zeile"><strong>Tel:</strong> {{ kontakt_telefon }}</div>\n        {% endif %}',
-            f'<div class="kontakt-zeile"><strong>Tel:</strong> {kontakt_telefon}</div>'
+            f'<div class="kontakt-zeile"><strong>Tel:</strong> <a href="tel:{telefon_href}" class="kontakt-link">{kontakt_telefon}</a></div>'
         )
     else:
         html = html.replace('{% if kontakt_telefon %}\n        <div class="kontakt-zeile"><strong>Tel:</strong> {{ kontakt_telefon }}</div>\n        {% endif %}', '')
@@ -405,15 +408,15 @@ def generiere_katalog():
         f.write(html_docs)
     print(f"[OK] GitHub Pages: {ausgabe_docs}")
 
-    # Assets in docs/ kopieren fuer GitHub Pages
+    # Assets in docs/ kopieren für GitHub Pages
     kopiere_assets_nach_docs()
 
-    print("\nIm Browser oeffnen? (j/n): ", end="")
+    print("\nIm Browser öffnen? (j/n): ", end="")
     antwort = input().strip().lower()
     if antwort == "j":
         webbrowser.open(str(ausgabe_lokal))
 
-    print("\nFertig. Fuer GitHub Pages: 'docs/' Ordner committen und pushen.")
+    print("\nFertig. Für GitHub Pages: 'docs/' Ordner committen und pushen.")
 
 
 if __name__ == "__main__":
