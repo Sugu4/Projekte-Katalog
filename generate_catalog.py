@@ -317,6 +317,22 @@ def generiere_html(daten):
     html = html.replace('{{ gesamte_projekte }}', str(len(alle_projekte)))
     html = html.replace('{{ anzahl_kategorien }}', str(len(verwendete_kategorien)))
 
+    # Meta-Tags
+    meta = info.get("meta", {})
+    kontakt_name = info.get("kontakt", {}).get("name", "")
+    html = html.replace('{{ meta_beschreibung }}', meta.get("beschreibung", info.get("untertitel", "")))
+    html = html.replace('{{ meta_autor }}', kontakt_name)
+    html = html.replace('{{ meta_og_bild }}', meta.get("og_bild", ""))
+    html = html.replace('{{ meta_og_url }}', meta.get("og_url", ""))
+
+    favicon_pfad = meta.get("favicon", "")
+    if favicon_pfad:
+        endung = Path(favicon_pfad).suffix.lower()
+        mime = "image/png" if endung == ".png" else "image/svg+xml" if endung == ".svg" else "image/x-icon"
+        html = html.replace('{{ meta_favicon }}', f'<link rel="icon" type="{mime}" href="{favicon_pfad}" />')
+    else:
+        html = html.replace('{{ meta_favicon }}', '')
+
     # Inhaltsverzeichnis
     html = html.replace(
         '{% for eintrag in inhaltsverzeichnis %}\n        <li class="iv-eintrag" onclick="geheZuSeite({{ eintrag.seite }})">\n          <span class="iv-name">{{ eintrag.kategorie }}</span>\n          <span class="iv-punkt"></span>\n          <span class="iv-seite">{{ eintrag.anzahl }} Projekt(e)</span>\n        </li>\n        {% endfor %}',
@@ -336,6 +352,8 @@ def generiere_html(daten):
     kontakt_email = kontakt.get("email", "")
     kontakt_website = kontakt.get("website", "")
     kontakt_telefon = kontakt.get("telefon", "")
+    kontakt_github = kontakt.get("github", "")
+    kontakt_portfolio = kontakt.get("portfolio", "")
 
     if kontakt_email:
         html = html.replace(
@@ -362,6 +380,28 @@ def generiere_html(daten):
         )
     else:
         html = html.replace('{% if kontakt_telefon %}\n        <div class="kontakt-zeile"><strong>Tel:</strong> {{ kontakt_telefon }}</div>\n        {% endif %}', '')
+
+    # SVG Icons für Links
+    icon_github = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>'
+    icon_portfolio = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>'
+
+    # Footer (unterhalb Navigation)
+    footer_links = []
+    if kontakt_github:
+        footer_links.append(f'<a href="{kontakt_github}" class="footer-link" target="_blank">{icon_github}GitHub</a>')
+    if kontakt_portfolio:
+        footer_links.append(f'<a href="{kontakt_portfolio}" class="footer-link" target="_blank">{icon_portfolio}Portfolio</a>')
+    footer_html = f'<div class="seiten-footer">{"".join(footer_links)}</div>' if footer_links else ''
+    html = html.replace('{{ seiten_footer }}', footer_html)
+
+    # Rückseite Links
+    rueckseite_links_teile = []
+    if kontakt_github:
+        rueckseite_links_teile.append(f'<a href="{kontakt_github}" class="rueckseite-link" target="_blank">{icon_github}GitHub</a>')
+    if kontakt_portfolio:
+        rueckseite_links_teile.append(f'<a href="{kontakt_portfolio}" class="rueckseite-link" target="_blank">{icon_portfolio}Portfolio</a>')
+    rueckseite_links_html = f'<div class="rueckseite-links">{"".join(rueckseite_links_teile)}</div>' if rueckseite_links_teile else ''
+    html = html.replace('{{ rueckseite_links }}', rueckseite_links_html)
 
     # Cover Tags
     html = html.replace(

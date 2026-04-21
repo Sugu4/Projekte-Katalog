@@ -4,6 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ katalog_titel }}</title>
+
+  <!-- Favicon -->
+  {{ meta_favicon }}
+
+  <!-- SEO -->
+  <meta name="description" content="{{ meta_beschreibung }}" />
+  <meta name="author" content="{{ meta_autor }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ katalog_titel }}" />
+  <meta property="og:description" content="{{ meta_beschreibung }}" />
+  <meta property="og:image" content="{{ meta_og_bild }}" />
+  <meta property="og:url" content="{{ meta_og_url }}" />
+  <meta property="og:site_name" content="{{ meta_autor }}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ katalog_titel }}" />
+  <meta name="twitter:description" content="{{ meta_beschreibung }}" />
+  <meta name="twitter:image" content="{{ meta_og_bild }}" />
+
   <style>
     /* ===== VARIABLEN ===== */
     :root {
@@ -500,6 +522,42 @@
       z-index: 1;
     }
 
+    .rueckseite-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-top: 36px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .rueckseite-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--farbe-grau);
+      text-decoration: none;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: 1px solid rgba(46, 125, 209, 0.2);
+      padding: 10px 20px;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .rueckseite-link:hover {
+      color: var(--farbe-weiss);
+      border-color: var(--farbe-akzent);
+      background: rgba(46, 125, 209, 0.08);
+    }
+
+    .rueckseite-link svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
     .kontakt-zeile {
       font-size: 13px;
       color: var(--farbe-grau);
@@ -566,6 +624,40 @@
 
     .seiten-indikator span {
       color: var(--farbe-akzent);
+    }
+
+    /* ===== FOOTER ===== */
+    .seiten-footer {
+      width: var(--seite-breite);
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      padding: 20px 0 8px;
+      border-top: 1px solid rgba(46, 125, 209, 0.12);
+      margin-top: 8px;
+    }
+
+    .footer-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--farbe-grau);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+      color: var(--farbe-akzent-hell);
+    }
+
+    .footer-link svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
     }
 
     /* ===== FORTSCHRITTSBALKEN ===== */
@@ -973,6 +1065,7 @@
         <div class="kontakt-zeile"><strong>Tel:</strong> {{ kontakt_telefon }}</div>
         {% endif %}
       </div>
+      {{ rueckseite_links }}
     </div>
 
   </div><!-- ende katalog-container -->
@@ -983,6 +1076,9 @@
     <div class="seiten-indikator">Seite <span id="aktuelle-seite">1</span> von <span id="gesamt-seiten">1</span></div>
     <button class="nav-pfeil" id="btn-weiter" onclick="navigiere(1)">Weiter &#8594;</button>
   </div>
+
+  <!-- FOOTER -->
+  {{ seiten_footer }}
 
   <script>
     const seiten = document.querySelectorAll('.seite');
