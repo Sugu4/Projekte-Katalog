@@ -171,7 +171,7 @@ def erstelle_leistungs_seite(seiten_index, kontakt_email, kontakt_telefon):
     <div class="seite leistungs-seite" id="seite-{seiten_index}">
       <div class="seiten-kopf">
         <div>
-          <div class="seiten-titel">Was ich für Sie mache</div>
+          <div class="seiten-titel">Was ich für dich umsetze</div>
           <div class="seiten-nummer">10 Leistungsbereiche aus einer Hand</div>
         </div>
       </div>
@@ -179,7 +179,7 @@ def erstelle_leistungs_seite(seiten_index, kontakt_email, kontakt_telefon):
         {karten_html}
       </div>
       <div class="leistungs-cta">
-        <div class="leistungs-cta-text">Interesse geweckt? Sprechen Sie mich direkt an.</div>
+        <div class="leistungs-cta-text">Interesse geweckt? Spreche mich direkt an.</div>
         <div class="leistungs-cta-kontakt">{kontakt_info}</div>
       </div>
     </div>"""
