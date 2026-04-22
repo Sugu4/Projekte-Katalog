@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung - WebM24 Projekte-Katalog</title>
+
+  <meta name="description" content="Datenschutzerklärung des WebM24 Projekte-Katalogs" />
+  <meta name="author" content="Süleyman Gümüs - WebM24" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <style>
+    :root {
+      --farbe-dunkel: #07111c;
+      --farbe-akzent: #2e7dd1;
+      --farbe-akzent-hell: #5ba3e8;
+      --farbe-gruen: #3db54a;
+      --farbe-weiss: #ffffff;
+      --farbe-grau: #7a8fa6;
+      --farbe-grau-hell: #c8d8ea;
+      --farbe-seite: #0f1e30;
+      --seite-breite: 900px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #070f18;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: var(--farbe-grau-hell);
+    }
+
+    .nav-leiste {
+      width: var(--seite-breite);
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      margin-bottom: 32px;
+    }
+
+    .nav-titel {
+      color: var(--farbe-akzent);
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .nav-zurueck {
+      background: transparent;
+      border: 1px solid var(--farbe-akzent);
+      color: var(--farbe-akzent);
+      padding: 8px 20px;
+      font-size: 13px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .nav-zurueck:hover {
+      background: var(--farbe-akzent);
+      color: var(--farbe-dunkel);
+    }
+
+    .container {
+      width: var(--seite-breite);
+      max-width: 100%;
+      background: var(--farbe-seite);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      padding: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--farbe-akzent), transparent);
+    }
+
+    .container::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--farbe-gruen), transparent);
+    }
+
+    h1 {
+      color: var(--farbe-weiss);
+      font-size: 26px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .untertitel {
+      color: var(--farbe-akzent);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(46, 125, 209, 0.2);
+    }
+
+    h2 {
+      color: var(--farbe-akzent);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--farbe-grau-hell);
+      margin-bottom: 14px;
+    }
+
+    a {
+      color: var(--farbe-akzent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--farbe-akzent-hell);
+      text-decoration: underline;
+    }
+
+    .trennlinie {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(46, 125, 209, 0.3), transparent);
+      margin: 40px 0;
+    }
+
+    .kontakt-block {
+      background: rgba(46, 125, 209, 0.06);
+      border: 1px solid rgba(46, 125, 209, 0.2);
+      padding: 24px 28px;
+      margin-top: 16px;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .kontakt-block strong {
+      color: var(--farbe-weiss);
+    }
+
+    .datum {
+      color: var(--farbe-grau);
+      font-size: 12px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    footer {
+      width: var(--seite-breite);
+      max-width: 100%;
+      text-align: center;
+      padding: 32px 0 16px;
+      color: var(--farbe-grau);
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav-leiste">
+    <span class="nav-titel">WebMiete24</span>
+    <a href="index.html" class="nav-zurueck">Zurück zum Katalog</a>
+  </nav>
+
+  <main class="container">
+
+    <h1>Datenschutzerklärung</h1>
+    <p class="untertitel">WebMiete24 Projekte-Katalog</p>
+
+    <h2>1. Verantwortlicher</h2>
+    <div class="kontakt-block">
+      <strong>Süleyman Gümüs</strong><br>
+      WebMiete24<br>
+      E-Mail: <a href="mailto:webmiete24@gmail.com">webmiete24@gmail.com</a><br>
+      Telefon: <a href="tel:+4917641966733">+49 176 41966733</a>
+    </div>
+
+    <div class="trennlinie"></div>
+
+    <h2>2. Hosting über GitHub Pages</h2>
+    <p>
+      Diese Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
+    </p>
+    <p>
+      Beim Aufruf dieser Website werden durch GitHub Pages technische Zugriffsdaten verarbeitet, insbesondere IP-Adressen der Besucher. Dies geschieht automatisch und ist für die Bereitstellung der Website technisch notwendig. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren und stabilen Bereitstellung der Website).
+    </p>
+    <p>
+      Weitere Informationen zum Datenschutz bei GitHub findest du unter:<br>
+      <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement</a>
+    </p>
+
+    <div class="trennlinie"></div>
+
+    <h2>3. Keine Cookies, kein Tracking</h2>
+    <p>
+      Diese Website verwendet keine Cookies und kein Analyse- oder Tracking-Tool (z.B. Google Analytics). Es werden keine Nutzerprofile erstellt und keine Daten an Dritte zu Werbezwecken weitergegeben.
+    </p>
+
+    <div class="trennlinie"></div>
+
+    <h2>4. Inhalte des Katalogs</h2>
+    <p>
+      Der Katalog zeigt abgeschlossene Projekte von WebM24. Es werden ausschließlich Firmennamen von Kunden sowie projektbezogene Informationen (Branche, erbrachte Leistungen, Bilder) veröffentlicht. Personenbezogene Daten von Einzelpersonen werden im Katalog nicht verarbeitet oder angezeigt.
+    </p>
+
+    <div class="trennlinie"></div>
+
+    <h2>5. Kontaktaufnahme</h2>
+    <p>
+      Wenn du per E-Mail oder Telefon Kontakt aufnimmst, werden deine übermittelten Daten (Name, E-Mail-Adresse, Telefonnummer, Nachrichteninhalt) ausschließlich zur Bearbeitung deiner Anfrage verwendet. Die Daten werden nicht ohne deine Einwilligung an Dritte weitergegeben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).
+    </p>
+
+    <div class="trennlinie"></div>
+
+    <h2>6. Deine Rechte</h2>
+    <p>
+      Du hast nach der DSGVO folgende Rechte gegenüber dem Verantwortlichen:
+    </p>
+    <p>
+      Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO).
+    </p>
+    <p>
+      Zur Ausübung dieser Rechte wende dich an: <a href="mailto:webmiete24@gmail.com">webmiete24@gmail.com</a>
+    </p>
+    <p>
+      Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die zuständige Behörde richtet sich nach deinem Wohnort in Deutschland.
+    </p>
+
+    <p class="datum">Stand: April 2026</p>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Süleyman Gümüs &nbsp;|&nbsp; WebMiete24
+  </footer>
+
+</body>
+</html>

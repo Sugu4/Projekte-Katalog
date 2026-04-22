@@ -660,6 +660,37 @@
       flex-shrink: 0;
     }
 
+    /* ===== RECHTLICHES-FOOTER ===== */
+    .rechtliches-footer {
+      width: var(--seite-breite);
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      padding: 16px 0 4px;
+    }
+
+    .rechtliches-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(122, 143, 166, 0.5);
+      text-decoration: none;
+      font-size: 11px;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+
+    .rechtliches-link:hover {
+      color: var(--farbe-akzent);
+    }
+
+    .rechtliches-link svg {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+    }
+
     /* ===== FORTSCHRITTSBALKEN ===== */
     .fortschritts-balken {
       width: var(--seite-breite);
@@ -1079,6 +1110,9 @@
 
   <!-- FOOTER -->
   {{ seiten_footer }}
+
+  <!-- RECHTLICHES -->
+  {{ rechtliches_footer }}
 
   <script>
     const seiten = document.querySelectorAll('.seite');
