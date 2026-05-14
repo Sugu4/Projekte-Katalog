@@ -5,7 +5,6 @@ Katalog exportieren: python generate_catalog.py
 """
 
 import json
-import os
 import shutil
 import webbrowser
 from pathlib import Path
@@ -59,7 +58,10 @@ def kopiere_assets_nach_docs():
 def erstelle_projekt_karte(projekt):
     """Generiert HTML für eine einzelne Projekt-Karte."""
     bilder_html = ""
-    if projekt.get("bilder"):
+    if projekt.get("video"):
+        src = bild_pfad_html(projekt["video"])
+        bilder_html = f'<video src="{src}" class="projekt-video" autoplay muted loop playsinline></video>'
+    elif projekt.get("bilder"):
         bilder = projekt["bilder"]
         name = projekt["name"]
         if len(bilder) == 1:
@@ -83,6 +85,11 @@ def erstelle_projekt_karte(projekt):
     if projekt.get("ergebnis"):
         ergebnis_html = f'<div class="projekt-ergebnis">{projekt["ergebnis"]}</div>'
 
+    url_html = ""
+    if projekt.get("url"):
+        icon_web = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/><line x1="2" y1="12" x2="22" y2="12"/></svg>'
+        url_html = f'<a href="{projekt["url"]}" class="projekt-url" onclick="window.open(\'{projekt["url"]}\', \'_blank\'); return false;">{icon_web} Website besuchen</a>'
+
     return f"""
         <div class="projekt-karte">
           {bilder_html}
@@ -91,6 +98,7 @@ def erstelle_projekt_karte(projekt):
           <div class="projekt-beschreibung">{projekt.get("beschreibung", "")}</div>
           {ergebnis_html}
           <div class="projekt-zeitraum">{projekt.get("zeitraum", "")}</div>
+          {url_html}
         </div>"""
 
 

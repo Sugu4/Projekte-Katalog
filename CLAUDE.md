@@ -23,6 +23,7 @@
 - Logo-Dateien liegen in: assets/
 - Projekt-Bilder liegen in: assets/projekte/
 - Ausgabe-Dateien (HTML, PDF) in: output/
+- Keine Emojis verwenden, ausschließlich SVG-Icons für visuelle Elemente
 
 ## Workflow
 1. Projekte hinzufügen: python add_project.py
