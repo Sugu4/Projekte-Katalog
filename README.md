@@ -128,7 +128,7 @@ data/projects.json
 | Werbung | Online-Werbung und Kampagnen |
 | Google Konto | Google My Business und Ads |
 | SEO | Suchmaschinenoptimierung |
-| Monatsberichte | Analysen und Berichte |
+| Monatsberichte | Analysen und Berichte | 
 
 ---
 
