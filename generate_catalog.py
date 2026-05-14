@@ -434,6 +434,14 @@ def generiere_html(daten):
     return html
 
 
+def exportiere_projekte_json(daten):
+    """Exportiert die Projektdaten als docs/projekte.json für WebMiete24."""
+    ausgabe = DOCS_DIR / "projekte.json"
+    with open(ausgabe, "w", encoding="utf-8") as f:
+        json.dump(daten, f, ensure_ascii=False, indent=2)
+    print(f"[OK] Projekte-JSON:  {ausgabe}")
+
+
 def generiere_katalog():
     print("\n" + "=" * 50)
     print("  WebM24 Katalog-Generator")
@@ -469,6 +477,9 @@ def generiere_katalog():
 
     # Assets in docs/ kopieren für GitHub Pages
     kopiere_assets_nach_docs()
+
+    # Projektdaten für WebMiete24 exportieren
+    exportiere_projekte_json(daten)
 
     print("\nIm Browser öffnen? (j/n): ", end="")
     antwort = input().strip().lower()

@@ -1,0 +1,194 @@
+{
+  "katalog_info": {
+    "titel": "WebM24 Projekte-Katalog",
+    "untertitel": "Professionelle Digitale Dienstleistungen",
+    "version": "1.0",
+    "erstellt": "2026-04-10",
+    "meta": {
+      "beschreibung": "Digitale Dienstleistungen von WebM24 • Webseiten, Branding, SEO, Videos und mehr aus einer Hand.",
+      "og_bild": "https://sugu4.github.io/Projekte-Katalog/assets/OG-Bild-Katalogv2.jpg",
+      "og_url": "https://sugu4.github.io/Projekte-Katalog/",
+      "favicon": "assets/LogoTele WebM24.png"
+    },
+    "kontakt": {
+      "name": "Süleyman Gümüs",
+      "email": "webmiete24@gmail.com",
+      "website": "",
+      "telefon": "+49 176 41966733",
+      "github": "https://github.com/Sugu4",
+      "portfolio": "https://sugu4.github.io/GuemuesPortfolio/"
+    }
+  },
+  "kategorien": [
+    "Webseiten",
+    "Webseite Update",
+    "Branding",
+    "SaaS",
+    "Bilder bearbeiten",
+    "Videos bearbeiten",
+    "Werbung",
+    "Google Konto",
+    "SEO",
+    "Monatsberichte"
+  ],
+  "projekte": [
+    {
+      "id": "001_santechdevey",
+      "name": "SanTechDevey",
+      "kategorie": "Webseiten",
+      "kunde": "SanTechDevey",
+      "branche": "Handwerk, Leckageortung und Bautrocknung",
+      "leistungen": [
+        "Webseite",
+        "Design",
+        "Logo",
+        "Icons",
+        "Bilder",
+        "Videos",
+        "Hosting",
+        "Go Live Support"
+      ],
+      "beschreibung": "Komplette Webseite von Grund auf erstellt. Design, Logo, Icons, Bilder und Videos aus einer Hand. Inklusive Hosting-Setup und Go Live Begleitung. Die Seite ist unter santechdevey.de erreichbar.",
+      "ergebnis": "Webseite innerhalb von 2 Wochen live geschaltet, inklusive vollstaendigem Hosting",
+      "zeitraum": "Dezember 2025",
+      "url": "https://santechdevey.de/",
+      "bilder": [
+        "assets/projekte/001_SanTechDevey/santechdevey.png"
+      ],
+      "hinzugefuegt": "2026-04-10"
+    },
+    {
+      "id": "002_byglanz",
+      "name": "By Glanzwerk Köln-Pesch",
+      "kategorie": "Webseiten",
+      "kunde": "By Glanzwerk Köln-Pesch",
+      "branche": "Fahrzeugaufbereitung und Autowaesche",
+      "leistungen": [
+        "Webseite",
+        "Design",
+        "Logo",
+        "Icons",
+        "Bilder",
+        "Videos"
+      ],
+      "beschreibung": "Komplette Webseite mit modernem minimalistischem Design erstellt. Logo, Icons, Bilder und Videos aus einer Hand produziert. Vorher-Nachher Galerie und transparente Preisgestaltung integriert.",
+      "ergebnis": "Webseite innerhalb von 2 Wochen fertiggestellt",
+      "zeitraum": "April 2026",
+      "url": "https://www.byglanzwerk.de/",
+      "bilder": [
+        "assets/projekte/002_ByGlanz/byglanz.png"
+      ],
+      "hinzugefuegt": "2026-04-10"
+    },
+    {
+      "id": "003_santech_devey",
+      "name": "SanTechDevey",
+      "kategorie": "Branding",
+      "kunde": "SanTechDevey",
+      "beschreibung": "Komplettes Branding für ein Handwerksunternehmen spezialisiert auf Leckageortung & Bautrocknung in Köln. Entwickelt wurde eine professionelle Corporate Identity die Kompetenz und Vertrauen im Handwerksbereich vermittelt.",
+      "ergebnis": "Wiedererkennbares & seriöses Erscheinungsbild das bei Privat- und Gewerbekunden Vertrauen schafft und die Fachkompetenz des Unternehmens nach außen transportiert.",
+      "zeitraum": "Dezember 2025",
+      "bilder": [
+        "assets/projekte/001_SanTechDevey/santech-logo.png",
+        "assets/projekte/001_SanTechDevey/cover.png",
+        "assets/projekte/001_SanTechDevey/leckageortung.png",
+        "assets/projekte/001_SanTechDevey/og-bild.png",
+        "assets/projekte/001_SanTechDevey/visitenkarte-front.png",
+        "assets/projekte/001_SanTechDevey/visitenkarte-back.png"
+      ],
+      "hinzugefuegt": "2026-04-14"
+    },
+    {
+      "id": "004_by_glanz",
+      "name": "By Glanzwerk Köln-Pesch",
+      "kategorie": "Branding",
+      "kunde": "By Glanzwerk Köln-Pech",
+      "beschreibung": "Komplettes Branding für eine premium Handwäsche & Fahrzeugaufbereitung in Köln-Pesch. Entwickelt wurde eine einheitliche Corporate Identity mit Hexagon-Logo, Teal/Dunkelgrau Farbpalette, Flyer sowie doppelseitiger Visitenkarte, alle Materialien druckfertig in Figma erstellt.",
+      "ergebnis": "Professionelles & wiedererkennbares Erscheinungsbild das Vertrauen schafft und sowohl Privatkunden als auch Geschäftskunden anspricht.",
+      "zeitraum": "April 2026",
+      "bilder": [
+        "assets/projekte/002_ByGlanz/by-glanz-logo.png",
+        "assets/projekte/002_ByGlanz/by-g-visitenkarte-front.png",
+        "assets/projekte/002_ByGlanz/by-g-visitenkarte-back.png",
+        "assets/projekte/002_ByGlanz/og-byglanz.png",
+        "assets/projekte/002_ByGlanz/glanzwerk_flyer.png"
+      ],
+      "hinzugefuegt": "2026-04-14"
+    },
+    {
+      "id": "005_trend_scope",
+      "name": "Trend Scope",
+      "kategorie": "SaaS",
+      "kunde": "TrendScope",
+      "beschreibung": "TrendScope ist ein System zur Analyse und Vorhersage globaler Social-Media-Trends. Es sammelt automatisch Daten aus Reddit, YouTube, GitHub und NewsAPI, verarbeitet diese mit NLP-Methoden und berechnet Trend-Scores sowie ML-Prognosen, dargestellt in einem interaktiven Echtzeit-Dashboard.",
+      "ergebnis": "Unternehmen und Privatpersonen erkennen frühzeitig aufkommende Trends und können gezielt handeln, etwa durch trendbasierte Börsenentscheidungen, das Erstellen von reichweitenstarkem Content oder das Identifizieren neuer Marktchancen bevor sie den Mainstream erreichen.",
+      "zeitraum": "April 2026",
+      "bilder": [
+        "assets/projekte/005_TrendScope/trend-scope-dashboard.png",
+        "assets/projekte/005_TrendScope/trend-scope-architecture.png"
+      ],
+      "hinzugefuegt": "2026-04-21"
+    },
+    {
+      "id": "006_melodie_&_brunch_düs",
+      "name": "Melodie & Brunch Düsseldorf",
+      "kategorie": "Branding",
+      "kunde": "M & B",
+      "beschreibung": "Es wurde ein exklusives visuelles Gesamtkonzept für das Event-Format „Melodie & Brunch“ in Düsseldorf entwickelt. Ziel war es, die Eleganz klassischer Musik, symbolisiert durch den weißen Flügel, mit der Herzlichkeit eines traditionellen, reichhaltigen Frühstücks zu vereinen. Jedes Element, von der Bildkomposition bis zur Farbwahl, wurde strategisch ausgewählt, um eine Atmosphäre von Luxus und Genuss zu erzeugen.",
+      "ergebnis": "Ästhetisches Branding, das perfekt zur Veranstaltung passt. Die hochwertigen Visuals sind für maximale Reichweite und Engagement auf Social-Media-Plattformen optimiert.",
+      "zeitraum": "März 2026",
+      "bilder": [
+        "assets/projekte/006_melodie_&_brunch_düs/m&b_1.png",
+        "assets/projekte/006_melodie_&_brunch_düs/m&b_2.png",
+        "assets/projekte/006_melodie_&_brunch_düs/m&b_3.png",
+        "assets/projekte/006_melodie_&_brunch_düs/m&b_4.png"
+      ],
+      "hinzugefuegt": "2026-04-23"
+    },
+    {
+      "id": "007_sp_juwelen_gold_&_ed",
+      "name": "SP Juwelen Gold & Edel Chronometrie",
+      "kategorie": "Branding",
+      "kunde": "Juwelier Nürnberg",
+      "beschreibung": "Es erfolgte eine ganzheitliche Entwicklung einer luxuriösen Markenidentität. Im Rahmen des Projekts wurde ein Logo-Design entwickelt und hochwertige Foto- und Videocontents produziert, um die Exzellenz der Zeitmesser und Schmuckstücke einzufangen. Aktuell in der Umsetzung ist eine moderne E-Commerce-Plattform, die das exklusive Einkaufserlebnis digital erlebbar macht.",
+      "ergebnis": "Die Marke verfügt über eine markante, professionelle Marktpräsenz, die Seriosität und handwerkliche Perfektion ausstrahlt. Damit ist die Marke nun optimal positioniert, um sowohl im stationären Handel als auch im digitalen Luxussegment zu überzeugen.",
+      "zeitraum": "April 2026",
+      "bilder": [
+        "assets/projekte/007_sp_juwelen_gold_&_ed/sp_logo.png",
+        "assets/projekte/007_sp_juwelen_gold_&_ed/sp_logo_show.png",
+        "assets/projekte/007_sp_juwelen_gold_&_ed/sp_dor.png",
+        "assets/projekte/007_sp_juwelen_gold_&_ed/sp_lokal_out.png"
+      ],
+      "hinzugefuegt": "2026-04-23"
+    },
+    {
+      "id": "008_design_auswahl",
+      "name": "Design Auswahls-Tool",
+      "kategorie": "SaaS",
+      "kunde": "Trust-L",
+      "beschreibung": "Entwicklung einer modernen Design-Auswahls-Tool mit mehreren Stilrichtungen, professionell, creative und minimalistisch. Die Oberfläche wurde bewusst klar und leicht gehalten, damit verschiedene Varianten einfach verglichen und Entscheidungen schneller getroffen werden konnten.",
+      "ergebnis": "Der Kunde konnte die Designs deutlich entspannter bewerten und fokussierter vergleichen. Am Ende wurden drei finale Varianten ausgewählt.",
+      "zeitraum": "März 2026",
+      "bilder": [],
+      "video": "assets/projekte/008_design_auswahl/Design Auswahl.mp4",
+      "hinzugefuegt": "2026-05-14"
+    },
+    {
+      "id": "009_by_glanz",
+      "name": "By Glanz",
+      "kategorie": "Google Konto",
+      "kunde": "By Glanzwerk Köln-Pesch",
+      "beschreibung": "Einrichtung und Optimierung des Google-Unternehmensprofils inklusive lokaler SEO-Struktur, Indexierung und Suchmaschinenoptimierung. Ziel war eine stärkere regionale Sichtbarkeit für Suchanfragen rund um Autowäsche und Fahrzeugpflege in Köln-Pesch.",
+      "ergebnis": "Die Website verzeichnete innerhalb kurzer Zeit deutlich mehr Besucher und Anfragen. Durch die Optimierung konnte das Unternehmen schnell auf der ersten Google-Seite für relevante lokale Suchbegriffe gefunden werden.",
+      "zeitraum": "April 2026",
+      "bilder": [
+        "assets/projekte/002_ByGlanz/google/gb-byglanz.png",
+        "assets/projekte/002_ByGlanz/google/gb-byglanz-v2.png",
+        "assets/projekte/002_ByGlanz/google/gb-byglanz-v3.png",
+        "assets/projekte/002_ByGlanz/google/indexierung-byglanz.png",
+        "assets/projekte/002_ByGlanz/google/indexierung-byglanz-v2.png"
+      ],
+      "hinzugefuegt": "2026-05-14"
+    }
+  ]
+}
