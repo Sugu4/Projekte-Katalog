@@ -48,8 +48,8 @@
         "Hosting",
         "Go Live Support"
       ],
-      "beschreibung": "Komplette Webseite von Grund auf erstellt. Design, Logo, Icons, Bilder und Videos aus einer Hand. Inklusive Hosting-Setup und Go Live Begleitung. Die Seite ist unter santechdevey.de erreichbar.",
-      "ergebnis": "Webseite innerhalb von 2 Wochen live geschaltet, inklusive vollstaendigem Hosting",
+      "beschreibung": "Komplette Webseite von Grund auf erstellt. Design, Logo, Icons, Bilder und Videos aus einer Hand. Inklusive Hosting-Setup und Go Live Begleitung. Ziel war es, die Dienstleistungen von SanTechDevey professionell und ansprechend online zu präsentieren, um sowohl Privat- als auch Gewerbekunden anzusprechen.",
+      "ergebnis": "Webseite innerhalb von 2 Wochen live geschaltet, inklusive vollstaendigem Hosting. Professionelles Design und hochwertige Inhalte, die die Kompetenz und Zuverlässigkeit von SanTechDevey effektiv kommunizieren.",
       "zeitraum": "Dezember 2025",
       "url": "https://santechdevey.de/",
       "bilder": [
@@ -71,8 +71,8 @@
         "Bilder",
         "Videos"
       ],
-      "beschreibung": "Komplette Webseite mit modernem minimalistischem Design erstellt. Logo, Icons, Bilder und Videos aus einer Hand produziert. Vorher-Nachher Galerie und transparente Preisgestaltung integriert.",
-      "ergebnis": "Webseite innerhalb von 2 Wochen fertiggestellt",
+      "beschreibung": "Komplette Webseite mit modernem minimalistischem Design erstellt. Logo, Icons, Bilder und Videos aus einer Hand produziert. Vorher-Nachher Galerie und transparente Preisgestaltung integriert, um die Dienstleistungen von By Glanzwerk ansprechend zu präsentieren und Vertrauen bei potenziellen Kunden zu schaffen.",
+      "ergebnis": "Webseite innerhalb von 2 Wochen fertiggestellt. Professionelles Design und hochwertige Inhalte, die die Dienstleistungen von By Glanzwerk effektiv präsentieren und Vertrauen bei potenziellen Kunden schaffen.",
       "zeitraum": "April 2026",
       "url": "https://www.byglanzwerk.de/",
       "bilder": [
@@ -101,7 +101,7 @@
       "id": "004_by_glanz",
       "name": "By Glanzwerk Köln-Pesch",
       "kategorie": "Branding",
-      "kunde": "By Glanzwerk Köln-Pech",
+      "kunde": "By Glanzwerk Köln-Pesch",
       "beschreibung": "Komplettes Branding für eine premium Handwäsche & Fahrzeugaufbereitung in Köln-Pesch. Entwickelt wurde eine einheitliche Corporate Identity mit Hexagon-Logo, Teal/Dunkelgrau Farbpalette, Flyer sowie doppelseitiger Visitenkarte, alle Materialien druckfertig in Figma erstellt.",
       "ergebnis": "Professionelles & wiedererkennbares Erscheinungsbild das Vertrauen schafft und sowohl Privatkunden als auch Geschäftskunden anspricht.",
       "zeitraum": "April 2026",
@@ -149,7 +149,7 @@
       "name": "SP Juwelen Gold & Edel Chronometrie",
       "kategorie": "Branding",
       "kunde": "Juwelier Nürnberg",
-      "beschreibung": "Es erfolgte eine ganzheitliche Entwicklung einer luxuriösen Markenidentität. Im Rahmen des Projekts wurde ein Logo-Design entwickelt und hochwertige Foto- und Videocontents produziert, um die Exzellenz der Zeitmesser und Schmuckstücke einzufangen. Aktuell in der Umsetzung ist eine moderne E-Commerce-Plattform, die das exklusive Einkaufserlebnis digital erlebbar macht.",
+      "beschreibung": "Es erfolgte eine ganzheitliche Entwicklung einer luxuriösen Markenidentität. Im Rahmen des Projekts wurde ein Logo-Design entwickelt und hochwertige Foto- und Videocontents produziert, um die Exzellenz der Zeitmesser und Schmuckstücke einzufangen. In der Planung, ist eine moderne E-Commerce-Plattform, die das exklusive Einkaufserlebnis digital erlebbar macht.",
       "ergebnis": "Die Marke verfügt über eine markante, professionelle Marktpräsenz, die Seriosität und handwerkliche Perfektion ausstrahlt. Damit ist die Marke nun optimal positioniert, um sowohl im stationären Handel als auch im digitalen Luxussegment zu überzeugen.",
       "zeitraum": "April 2026",
       "bilder": [
@@ -174,7 +174,7 @@
     },
     {
       "id": "009_by_glanz",
-      "name": "By Glanz",
+      "name": "By Glanzwerk Köln-Pesch",
       "kategorie": "Google Konto",
       "kunde": "By Glanzwerk Köln-Pesch",
       "beschreibung": "Einrichtung und Optimierung des Google-Unternehmensprofils inklusive lokaler SEO-Struktur, Indexierung und Suchmaschinenoptimierung. Ziel war eine stärkere regionale Sichtbarkeit für Suchanfragen rund um Autowäsche und Fahrzeugpflege in Köln-Pesch.",
