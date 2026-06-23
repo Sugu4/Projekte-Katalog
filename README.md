@@ -1,6 +1,7 @@
 # WebM24 Projekte-Katalog
 
 Digitaler Katalog zum Präsentieren deiner Projekte. Zeigt Webseiten, Branding, SEO und alle anderen Leistungen in einem professionellen Design.
+Siehe dir unten das Bsp. an.
 
 ---
 
